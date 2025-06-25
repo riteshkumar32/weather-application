@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  color: #222;
+  transition: 0.3s ease;
+}
+body.dark {
+  background: #121212;
+  color: #eeeeee8c;
+}
+.app {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+input {
+  padding: 0.5rem;
+  border-radius: 4rem;
+  font-size: 1rem;
+  width: 60%;
+}
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.weather img {
+  width: 80px;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Forecast Cards */
+.forecast-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 1rem;
+}
+.forecast-day {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  padding: 10px;
+  text-align: center;
+  color: inherit;
+  transition: 0.3s ease;
+}
+.forecast-day img {
+  width: 40px;
+  margin-bottom: 5px;
+}
+body.dark .forecast-day {
+  background: rgba(255, 255, 255, 0.05);
+}
