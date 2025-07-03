@@ -1,5 +1,5 @@
-let apiKey = "b190a0605344cc4f3af08d0dd473dd25";
-const apiBase = "https://api.openweathermap.org/data/2.5/";
+let apiKey = "babuji";
+const apiBase = "babuji";
 
 const searchBtn = document.getElementById("searchBtn");
 const geoBtn = document.getElementById("geoBtn");
